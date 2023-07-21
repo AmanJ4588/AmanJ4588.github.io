@@ -164,7 +164,51 @@
     </main>
 </div>
 
+
+
+
+
+    <!--for theme-->
+    <script>
+        // Function to set the light theme
+        function SetLightTheme() {
+            var body = document.body;
+            body.classList.remove("text-bg-dark");
+            body.classList.add("text-bg-light");
+            var connect_btn = document.getElementById("btn1");
+            connect_btn.classList.remove("border-white");
+            connect_btn.classList.add("border-black");
+            // Store the theme preference in Local Storage
+            localStorage.setItem("theme", "light");
+        }
+  
+        // Function to set the dark theme
+        function SetDarkTheme() {
+            var body = document.body;
+            body.classList.remove("text-bg-light");
+            body.classList.add("text-bg-dark");
+            // Store the theme preference in Local Storage
+            localStorage.setItem("theme", "dark");
+        }
+  
+        // Function to check and apply the theme preference on page load
+        function applyThemePreference() {
+            var themePreference = localStorage.getItem("theme");
+            if (themePreference === "light") {
+                SetLightTheme();
+            } else {
+                SetDarkTheme();
+            }
+        }
+  
+        // Add event listeners to the buttons
+        document.getElementById('lt').addEventListener("click", SetLightTheme);
+        document.getElementById('dt').addEventListener("click", SetDarkTheme);
+  
+        // Call applyThemePreference on page load
+        applyThemePreference();
+    </script>
+
     <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src = "js/Theme.js"> </script>
     </body>
 </html>
