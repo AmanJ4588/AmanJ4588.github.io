@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Ubuntu:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
+
 #offcanvasWithBothOptions { 
     width: 25%;
 }
@@ -14,6 +17,7 @@
  
 
 .topbar{ 
+    font-family: sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; 
@@ -27,6 +31,7 @@
 
 @media only screen and (max-width: 880px) {
     .topbar{ 
+        font-family: sans-serif;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap; 
@@ -40,6 +45,7 @@
 }
 
 #greet , #C1 { 
+    font-family: Belanosima;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -50,6 +56,7 @@
 }
 @media only screen and (max-width: 880px) {
     #greet , #C1 { 
+        font-family: Belanosima;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -61,6 +68,7 @@
 }
 @media only screen and (min-width: 880px) and (max-width: 977px) {
     #greet , #C1 { 
+        font-family: Belanosima;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -71,20 +79,24 @@
     }
 }
 #content , #content1{ 
+    font-family: Roboto Slab; 
     font-size: 30px;
 }
 @media only screen and (max-width: 880px) {
     #content , #content1{ 
+        font-family: Roboto Slab; 
         font-size: 19px;
     }
 }
 
 /* custom style starts */    /*for about me and contact*/ 
 .head_custom { 
+    font-family: 'B612 Mono' ;
     font-size: 2rem;
 }
 
 .para_custom { 
+    font-family: 'Cutive Mono';
     font-size: 1rem;
 }
 
