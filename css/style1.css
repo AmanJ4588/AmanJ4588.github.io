@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Ubuntu:wght@500&display=swap');
+
+
+/*font-family: "Kode Mono", monospace;*/
 
 #offcanvasWithBothOptions { 
     width: 25%;
@@ -13,8 +17,9 @@
 }
  
 
+
 .topbar{ 
-    font-family: sans-serif;
+    font-family: "Kode Mono";
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; 
@@ -42,7 +47,7 @@
 }
 
 #greet , #C1 { 
-    font-family: Belanosima;
+    font-family: 'Kode Mono';
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -53,7 +58,7 @@
 }
 @media only screen and (max-width: 880px) {
     #greet , #C1 { 
-        font-family: Belanosima;
+        font-family: 'Kode Mono';
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -65,7 +70,7 @@
 }
 @media only screen and (min-width: 880px) and (max-width: 977px) {
     #greet , #C1 { 
-        font-family: Belanosima;
+        font-family: 'Kode Mono';
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -76,25 +81,26 @@
     }
 }
 #content , #content1{ 
-    font-family: Roboto Slab; 
+    font-family: 'Kode Mono'; 
     font-size: 30px;
 }
 @media only screen and (max-width: 880px) {
     #content , #content1{ 
-        font-family: Roboto Slab; 
+        font-family: 'Kode Mono'; 
         font-size: 19px;
     }
 }
 
 /* custom style starts */    /*for about me and contact*/ 
 .head_custom { 
-    font-family: 'Ubuntu' ;
-    font-size: 2rem;
+    font-family: 'Kode Mono' ;
+    font-weight: 750;
+    font-size: 1.8rem;
 }
 
 .para_custom { 
-    font-family: 'Crimson Text';
-    font-size: 1rem;
+    font-family: 'Kode Mono';
+    font-size: 0.5rem;
 }
 
 /*custom style ends */ 
